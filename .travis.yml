@@ -6,4 +6,4 @@ before_install:
   - docker build -t mghoniem/docker-angular -f Dockerfile.dev .
 
 script:
-  - docker run mghoniem/docker-angular npm run test --watch=false --browsers=ChromeHeadlessNoSandbox
+  - docker run mghoniem/docker-angular npm run test
