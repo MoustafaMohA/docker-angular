@@ -8,5 +8,6 @@ RUN ls
 RUN cd dist
 RUN ls
 
+
 FROM nginx
 COPY --from=builder /app/dist/hello /usr/share/nginx/html
